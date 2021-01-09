@@ -20,7 +20,8 @@ public enum ErrorCodeEnum {
     AUTH_LOGOUT_SUCCESS("30009", "退出成功"),
     AUTH_NOT_LOGIN("30010", "用户未登录"),
     AUTH_PARAMETER_IS_EMPTY("30011", "参数为空"),
-
+    AUTH_ACTIVE_OVERTIME("30012", "缓存失效"),
+    AUTH_ACTIVE_VERIFITION("30013", "验证码错误"),
     /**后台*/
     SYSTEM_EXECUTION_ERROR("B0001", "系统执行出错"),
     SYSTEM_EXECUTION_TIMEOUT("B0100", "系统执行超时"),

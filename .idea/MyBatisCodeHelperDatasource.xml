@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MyBatisCodeHelperDatasource">
+    <option name="projectProfile">
+      <ProjectProfile>
+        <option name="addSerializeUid" value="true" />
+        <option name="generateService" value="true" />
+        <option name="generateServiceInterface" value="true" />
+        <option name="javaMapperPackage" value="com.cskt.mapper" />
+        <option name="javaMapperPath" value="$PROJECT_DIR$/itrip-dao/src/main/java" />
+        <option name="javaModelPackage" value="com.cskt.entity" />
+        <option name="javaModelPath" value="$PROJECT_DIR$/itrip-beans/src/main/java" />
+        <option name="lastDatabaseCrudChooseModuleName" value="itrip-beans" />
+        <option name="lombokAllArgConstructor" value="true" />
+        <option name="lombokDataAnnotation" value="true" />
+        <option name="lombokNoArgsConstructor" value="true" />
+        <option name="mapperAnnotaion" value="true" />
+        <option name="moduleNameToPackageAndPathMap">
+          <map>
+            <entry key="itrip-beans">
+              <value>
+                <UserPackageAndPathInfoByModule>
+                  <option name="javaMapperPackage" value="com.cskt.mapper" />
+                  <option name="javaMapperPath" value="$PROJECT_DIR$/itrip-dao/src/main/java" />
+                  <option name="javaModelPacakge" value="com.cskt.entity" />
+                  <option name="javaModelPath" value="$PROJECT_DIR$/itrip-beans/src/main/java" />
+                  <option name="javaServiceInterfacePackage" value="com.cskt.service" />
+                  <option name="javaServiceInterfacePath" value="$PROJECT_DIR$/itrip-dao/src/main/java" />
+                  <option name="javaServicePackage" value="com.cskt.service.impl" />
+                  <option name="javaServicePath" value="$PROJECT_DIR$/itrip-dao/src/main/java" />
+                  <option name="xmlPackage" value="com.cskt.mapper.xml" />
+                  <option name="xmlPath" value="$PROJECT_DIR$/itrip-dao/src/main/java" />
+                </UserPackageAndPathInfoByModule>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="mybatisPlusStaticField" value="false" />
+        <option name="p3CComment" value="true" />
+        <option name="tableGenerateConfigs">
+          <map>
+            <entry key="itripdb:itrip_area_dic">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="ItripAreaDic" />
+                  <option name="moduleName" value="itrip-beans" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="itripdb:itrip_comment">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="ItripComment" />
+                  <option name="moduleName" value="itrip-beans" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="itripdb:itrip_hotel">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="ItripHotel" />
+                  <option name="moduleName" value="itrip-beans" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="itripdb:itrip_hotel_extend_property">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="ItripHotelExtendProperty" />
+                  <option name="moduleName" value="itrip-beans" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="itripdb:itrip_hotel_feature">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="ItripHotelFeature" />
+                  <option name="moduleName" value="itrip-beans" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="itripdb:itrip_hotel_order">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="ItripHotelOrder" />
+                  <option name="moduleName" value="itrip-beans" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="itripdb:itrip_hotel_room">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="ItripHotelRoom" />
+                  <option name="moduleName" value="itrip-beans" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="itripdb:itrip_hotel_temp_store">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="ItripHotelTempStore" />
+                  <option name="moduleName" value="itrip-beans" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="itripdb:itrip_hotel_trading_area">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="ItripHotelTradingArea" />
+                  <option name="moduleName" value="itrip-beans" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="itripdb:itrip_image">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="ItripImage" />
+                  <option name="moduleName" value="itrip-beans" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="itripdb:itrip_label_dic">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="ItripLabelDic" />
+                  <option name="moduleName" value="itrip-beans" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="itripdb:itrip_order_link_user">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="ItripOrderLinkUser" />
+                  <option name="moduleName" value="itrip-beans" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="itripdb:itrip_product_store">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="ItripProductStore" />
+                  <option name="moduleName" value="itrip-beans" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="itripdb:itrip_trade_ends">
+              <value>
+                <TableGenerateConfig>
+                  <option name="javaModelName" value="ItripTradeEnds" />
+                  <option name="moduleName" value="itrip-beans" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="itripdb:itrip_user">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="ItripUser" />
+                  <option name="moduleName" value="itrip-beans" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="itripdb:itrip_user_link_user">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="ItripUserLinkUser" />
+                  <option name="moduleName" value="itrip-beans" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="useSwagger" value="true" />
+        <option name="userMybatisPlus" value="true" />
+        <option name="xmlMapperPackage" value="com.cskt.mapper.xml" />
+        <option name="xmlMapperPath" value="$PROJECT_DIR$/itrip-dao/src/main/java" />
+      </ProjectProfile>
+    </option>
+  </component>
+</project>

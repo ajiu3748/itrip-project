@@ -27,6 +27,7 @@
     </parent>
     <!-- properties：用于管理项目中所有Jar包版本号 -->
     <properties>
+        <aliyun-java-sdk-core.version>4.5.3</aliyun-java-sdk-core.version>
         <java.version>1.8</java.version>
         <mybatis-plus-boot-starter.version>3.4.0</mybatis-plus-boot-starter.version>
         <springfox-swagger.version>2.9.2</springfox-swagger.version>
@@ -43,6 +44,13 @@
     <!--dependencyManagement:父项目中指定引入jar包的版本，子项目中引用的jar版本根据父项目中指定的版本决定 -->
     <dependencyManagement>
         <dependencies>
+
+            <dependency>
+                <groupId>com.aliyun</groupId>
+                <artifactId>aliyun-java-sdk-core</artifactId>
+                <version>${aliyun-java-sdk-core.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>com.cskt</groupId>
                 <artifactId>itrip-beans</artifactId>

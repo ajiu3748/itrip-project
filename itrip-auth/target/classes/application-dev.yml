@@ -1,0 +1,94 @@
+#\u6307\u5B9A\u7AEF\u53E3\u53F7
+server:
+  port: 8801
+  #  \u6307\u5B9Aservlet\u4E0A\u4E0B\u6587\u8DEF\u5F84
+  servlet:
+    context-path: /auth
+spring:
+  #  \u6570\u636E\u5E93\u914D\u7F6E
+  datasource:
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/itripdb?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Hongkong&allowPublicKeyRetrieval=true
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 127.0.0.1:8848
+#        username: nacos
+#        password: nacos
+  application:
+    name: itrip-auth
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  #    \u914D\u7F6E\u90AE\u4EF6\u53D1\u9001\u57FA\u672C\u4FE1\u606F
+  mail:
+    default-encoding: utf-8
+    host: smtp.126.com
+    username: mo_168@126.com
+    password: usa911
+    protocol: smtp
+    properties.mail.smtp.auth: true
+    properties.mail.smtp.port: 994
+    properties.mail.display.sendmail: Javen
+    properties.mail.display.sendname: Spring Boot Guide Email
+    properties.mail.smtp.starttls.enable: true
+    properties.mail.smtp.starttls.required: true
+    properties.mail.smtp.ssl.enable: true
+    properties.mail.from: mo_168@126.com
+
+mybatis-plus:
+  mapper-locations: classpath:com/cskt/mapper/xml/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+#    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  type-aliases-package: com.cskt.entity
+  #mybatis-plus逻辑删除的分页插件配置
+  global-config:
+    db-config:
+      #逻辑删除的字段
+      logic-delete-field: isDeleted
+      # 删除的值为1
+      logic-delete-value: 1
+      # 没有删除的字段为0
+      logic-not-delete-value: 0
+
+
+
+#决定是否发送邮件，测试环境不发送，生成环境发送
+email:
+  send:
+    url: http://127.0.0.1:8801
+    enable: true
+
+#决定是否发送短信，测试环境不发送，生成环境发送
+sms:
+  send:
+    enable: true
+
+#redis 配置
+redis:
+  database: 0
+  host: 127.0.0.1
+  lettuce:
+    pool:
+      max-active: 8   #最大连接数据库连接数,设 0 为没有限制
+      max-idle: 8     #最大等待连接中的数量,设 0 为没有限制
+      max-wait: -1ms  #最大建立连接等待时间。如果超过此时间将接到异常。设为-1表示无限制。
+      min-idle: 0     #最小等待连接中的数量,设 0 为没有限制
+    shutdown-timeout: 100ms
+  password: ''
+  port: 6379
+
+#自定义交换机、路由及队列相关信息
+mq:
+  env: local
+  exchange:
+    name: ${mq.env}:mq:exchange:itrip
+  routing:
+    key:
+      name: ${mq.env}:mq:routing:key:itrip
+  queue:
+    name: ${mq.env}:mq:queue:itrip
