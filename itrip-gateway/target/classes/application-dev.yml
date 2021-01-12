@@ -1,0 +1,41 @@
+server:
+  port: 80
+spring:
+  application:
+    name: itrip-gateway
+  cloud:
+    #    注册到服务中心
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        username: nacos
+        password: nacos
+    #        指定路径规则
+    gateway:
+      routes:
+      #        路由Id
+      - id: itrip-auth
+        #        路由目标的服务名
+        uri: lb://itrip-auth
+        #        路径匹配
+        predicates:
+        - Path=/auth/**
+##        业务模块路由
+#      - id: itrip-biz
+#        uri: lb://itrip-biz
+#        predicates:
+#        - Path=/biz/**
+##        查询模块路由
+#      - id: itrip-search
+#        uri: lb://itrip-search
+#        predicates:
+#        - Path=/search/**
+##        支付模块路由
+#      - id: itrip-trade
+#        uri: lb://itrip-trade
+#        predicates:
+#        - Path=/trade/**
+      discovery:
+        locator:
+          lower-case-service-id: true
+          enabled: true
